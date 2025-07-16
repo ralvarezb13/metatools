@@ -1,0 +1,28 @@
+name: Publish MetaComponents and MetaTools to GitHub Packages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
+      - name: Publish MetaComponents and MetaTools to GitHub Packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "gpr.user=ralvarezb13" >> ~/.gradle/gradle.properties
+          echo "gpr.key=${GITHUB_TOKEN}" >> ~/.gradle/gradle.properties
+          ./gradlew MetaComponents:publish MetaTools:publish --no-daemon 

@@ -60,3 +60,26 @@ dependencies {
 
 
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.meta'
+                artifactId = 'metacomponents'
+                version = '1.0.1'
+            }
+        }
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/ralvarezb13/metatools")
+                credentials {
+                    username = project.findProperty("gpr.user") ?: System.getenv("USERNAME_GITHUB")
+                    password = project.findProperty("gpr.key") ?: System.getenv("TOKEN_GITHUB")
+                }
+            }
+        }
+    }
+}
