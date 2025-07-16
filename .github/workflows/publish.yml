@@ -23,6 +23,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          mkdir -p ~/.gradle
           echo "gpr.user=ralvarezb13" >> ~/.gradle/gradle.properties
           echo "gpr.key=${GITHUB_TOKEN}" >> ~/.gradle/gradle.properties
           ./gradlew MetaComponents:publish MetaTools:publish --no-daemon 
