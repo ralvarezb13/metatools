@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="copyright">Copyright ©2021. Todos los derechos reservados\n Metafinanciera México.</string>
+    <string name="profile_legal_title">ENTIDADES REGULATORIAS</string>
+    <string name="image_no_data">Image no data</string>
+
+
+    <string name="Roboto_Bold">roboto_bold.ttf</string>
+    <string name="Roboto_Italic">roboto_medium_italic.ttf</string>
+    <string name="Roboto_Light">roboto_light.ttf</string>
+    <string name="Roboto_Medium">roboto_medium.ttf</string>
+    <string name="Roboto_Regular">roboto_regular.ttf</string>
+
+
+    <string name="Queretaro">Queretaro</string>
+    <string name="Aguascalientes">Aguascalientes</string>
+    <string name="Bajio">Bajio</string>
+    <string name="Bajio_80p">Bajio_80p</string>
+    <string name="Bajio_60p">Bajio_60p</string>
+    <string name="Bajio_20p">Bajio_20p</string>
+    <string name="Blanco">Blanco</string>
+    <string name="Leon">Leon</string>
+    <string name="Guanajuato">Guanajuato</string>
+    <string name="Irapuato">Irapuato</string>
+    <string name="San_Miguel">San_Miguel</string>
+    <string name="Valladolid">Valladolid</string>
+    <string name="Zacatecas">Zacatecas</string>
+    <string name="understood">Entiendo</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="version_name">v%1$s</string>
+    <string name="steps_text"><u>Paso %1d de %1d</u></string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="request_one">SOLICITA UNA</string>
+    <string name="title_support">Contacta a nuestro centro de atención a clientes para que tu información se valide y actualice.</string>
+    <string name="subtitle_support">Contacta con nosotros vía:</string>
+    <string name="meta_phone">442 394 8156</string>
+    <string name="call_center_number">442 222 5718</string>
+    <string name="whats_app_number_intent">+52 %1$s</string>
+    <string name="text_loading">Un momento… Estamos procesando la información</string>
+    <string name="enter_your_signature_next">Debes de ingresar tu firma para continuar</string>
+    <string name="enter_your_signature">Ingresa tu firma</string>
+    <string name="enter_your_signature_as_id">Ingresa tu firma tal cual aparece en tu identificación oficial</string>
+    <string name="next_text">Siguiente</string>
+
+
+</resources>

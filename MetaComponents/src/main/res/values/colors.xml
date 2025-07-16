@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Acentos-->
+    <color name="Queretaro">#481AE1</color>
+    <color name="Queretaro_80p">#6941F0</color>
+    <color name="Queretaro_Dark_20p">#310EA3</color>
+
+    <color name="Aguascalientes">#52c8f2</color>
+    <color name="Aguascalientes_80p">#81D2EF</color>
+    <color name="Aguascalientes_Dark_20p">#4BB4D9</color>
+
+    <!--Acentos-->
+
+    <color name="Bajio">#1b1d36</color>
+    <color name="Bajio_80p">#54576b</color>
+    <color name="Bajio_60p">#a9abb5</color>
+    <color name="Bajio_40p">#D2D4E0</color>
+    <color name="Bajio_20p">#ebecf2</color>
+    <color name="Blanco">#FFFFFF</color>
+    <color name="Bajio_Dark">#0F101F</color>
+
+    <!--Interface-->
+    <color name="Leon">#25844F</color>
+    <color name="Guanajuato">#7CB16D</color>
+    <color name="Irapuato">#EB0F2F</color>
+    <color name="San_Miguel">#F2615F</color>
+    <color name="Valladolid">#FAC410</color>
+    <color name="Zacatecas">#258FF8</color>
+
+
+    <!--No estan-->
+    <color name="Celaya">#494A8E</color>
+
+
+
+
+</resources>

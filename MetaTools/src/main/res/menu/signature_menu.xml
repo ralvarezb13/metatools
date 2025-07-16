@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/undo_signature"
+        android:icon="@drawable/ic_undo"
+        android:title="Deshacer"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/clear_signature"
+        android:icon="@drawable/ic_delete_white"
+        android:title="Limpiar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/confirm_signature"
+        android:icon="@drawable/ic_next"
+        android:title="Limpiar"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,21 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../.gradle/caches/transforms-2/files-2.1/60287acdd56244a89e004ee74a70a948/metacomponents-0.1.55/res/layout/activity_meta_camera.xml" value="0.15885416666666666" />
+        <entry key="../../../../.gradle/caches/transforms-2/files-2.1/ff065d48bc5e6d72ebe9c9deca9a414b/metacomponents-0.1.54/res/layout/fragment_meta_progress.xml" value="0.16296296296296298" />
+        <entry key="../../../../.gradle/caches/transforms-2/files-2.1/ff065d48bc5e6d72ebe9c9deca9a414b/metacomponents-0.1.54/res/layout/fragment_meta_success.xml" value="0.16296296296296298" />
+        <entry key="MetaTools/src/main/res/layout/activity_camera.xml" value="0.23020833333333332" />
+        <entry key="MetaTools/src/main/res/menu/signature_menu.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12407407407407407" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

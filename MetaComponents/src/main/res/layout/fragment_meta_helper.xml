@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meta.metacomponents.views.MetaConstrainsWhiteView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.meta.metacomponents.views.MetaConstrainsWhiteView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.meta.metacomponents.textview.MetaTextView
+                android:id="@+id/title_helper_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="32sp"
+                android:textColor="@color/Bajio_80p"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="¿Dónde puedes encontrar tu número de tarjeta?" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="42dp"
+                android:background="@drawable/background_stroke"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_helper_textView">
+
+                <include
+                    android:id="@+id/containerDataSimple"
+                    layout="@layout/no_data_simple_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_helper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.meta.metacomponents.textview.NormalTextView
+                android:id="@+id/subtitle_helper_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="42dp"
+                android:textColor="@color/Bajio_80p"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containerView"
+                tools:text="En la parte trasera de tu tarjeta encontraras 16 dígitos abajo del logo de Meta, estos dígitos identifican tu tarjeta y se conoce como número de tarjeta" />
+
+            <com.meta.metacomponents.button.MetaButton
+                android:id="@+id/understood_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/understood"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="42dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subtitle_helper_textView" />
+
+        </com.meta.metacomponents.views.MetaConstrainsWhiteView>
+
+    </ScrollView>
+
+
+</com.meta.metacomponents.views.MetaConstrainsWhiteView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meta.metacomponents.views.MetaConstrainsWhiteView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.meta.metacomponents.views.MetaConstrainsWhiteView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="128dp"
+                android:layout_marginEnd="42dp"
+                android:background="@drawable/background_stroke"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include
+                    android:id="@+id/containerDataSimple"
+                    layout="@layout/no_data_simple_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:contentDescription="@null"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.meta.metacomponents.textview.ExtraLargeTextView
+                android:id="@+id/title_sucess_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="42dp"
+                android:textColor="@color/Leon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containerView"
+                tools:text="¡Has iniciado el proceso de crédito!" />
+
+            <com.meta.metacomponents.button.MetaButton
+                android:id="@+id/understood_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="42dp"
+                android:text="@string/understood"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_sucess_textView" />
+
+            <com.meta.metacomponents.button.MetaTextButton
+                android:id="@+id/left_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                app:layout_constraintBottom_toBottomOf="@+id/understood_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/understood_button"
+                tools:text="Volver a tomar"
+                tools:visibility="visible" />
+
+
+        </com.meta.metacomponents.views.MetaConstrainsWhiteView>
+
+    </ScrollView>
+
+</com.meta.metacomponents.views.MetaConstrainsWhiteView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MetaTextView">
+        <attr name="fontName" format="integer" />
+        <attr name="newColor" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MetaContainerView">
+        <attr name="newPadding" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LinkTextView">
+        <attr name="fontLinkName" format="integer" />
+        <attr name="newLink" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MetaButton">
+        <attr name="fontButtonName" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="NoDataView">
+        <attr name="titleNoData" format="string" />
+        <attr name="detailNoData" format="string" />
+        <attr name="android:src"/>
+    </declare-styleable>
+
+    <declare-styleable name="NoDataSimpleView">
+        <attr name="titleNoDataSimple" format="string" />
+        <attr name="android:src"/>
+    </declare-styleable>
+
+    <declare-styleable name="StepToStepView">
+        <attr name="titleStep" format="string" />
+        <attr name="progressStep" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MetaProgressView">
+        <attr name="newProgress" format="integer" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="MetaInputLayout">
+        <attr name="android:text"/>
+        <attr name="android:textAllCaps"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="android:inputType"/>
+        <attr name="android:imeOptions"/>
+        <attr name="android:maxLength"/>
+        <attr name="android:maxLines"/>
+        <attr name="android:focusable"/>
+        <attr name="android:clickable"/>
+        <attr name="inputStyle" format="reference"/>
+        <attr name="fontInputName" format="integer" />
+        <attr name="minLength" format="integer" />
+        <attr name="newError" format="string" />
+        <attr name="typeData" format="string" />
+        <attr name="isOptional" format="boolean" />
+        <attr name="initialValue" format="string" />
+        <attr name="format" format="string" />
+        <attr name="idComponent" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MetaSpinnerInputLayout">
+        <attr name="android:text"/>
+        <attr name="android:textAllCaps"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="android:inputType"/>
+        <attr name="android:imeOptions"/>
+        <attr name="android:maxLength"/>
+        <attr name="android:maxLines"/>
+        <attr name="android:focusable"/>
+        <attr name="android:clickable"/>
+        <attr name="isOptionalS" format="boolean" />
+        <attr name="inputStyleS" format="reference"/>
+        <attr name="fontInputNameS" format="integer" />
+        <attr name="newErrorS" format="string" />
+        <attr name="typeDataS" format="string" />
+        <attr name="nullabledataS" format="string" />
+        <attr name="initialValueS" format="string" />
+        <attr name="formatS" format="string" />
+        <attr name="idComponentS" format="reference" />
+    </declare-styleable>
+
+</resources>

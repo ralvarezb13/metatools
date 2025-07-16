@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/Aguascalientes" />
+    <corners android:radius="4dp" />
+    <padding
+        android:bottom="0dp"
+        android:left="16dp"
+        android:right="16dp"
+        android:top="0dp" />
+</shape>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/toolBarStyle"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:titleTextColor="@android:color/white" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.meta.metacomponents.textview.MetaTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/enter_your_signature_as_id"
+            android:textColor="#54576B80"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="120dp"
+            app:layout_constraintTop_toTopOf="@id/signature_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/signature_layout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/signature_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottom_layout"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <me.panavtec.drawableview.DrawableView
+                android:id="@+id/signature_view"
+                android:layout_width="2600dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@id/signature_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <View
+                android:id="@+id/signature_separator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/signature_error_text" />
+
+            <TextView
+                android:id="@+id/signature_error_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_your_signature_next"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:textColor="#D1424B"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/signature_separator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/signature_slider"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:thumbColor="@color/Queretaro"
+                app:trackColorActive="@color/Queretaro"
+                android:layout_weight="1"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                tools:value="2.0"
+                app:labelBehavior="gone"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/signature_error_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/next_button"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:fontFamily="3"
+                android:text="@string/next_text"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/signature_error_text"
+                app:layout_constraintStart_toEndOf="@id/signature_slider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

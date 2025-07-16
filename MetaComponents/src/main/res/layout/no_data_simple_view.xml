@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/no_data_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="62dp"
+            android:contentDescription="@string/image_no_data"
+            android:src="@drawable/ic_holder"/>
+
+        <com.meta.metacomponents.textview.NormalTextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="32dp"
+            app:fontName="2"
+            android:gravity="center"
+            tools:text="No se pudo cargar la imagen, revisa tu conexión a internet" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

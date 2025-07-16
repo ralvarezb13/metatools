@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/view_finder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/cameraMask"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/ic_selfie"
+        app:layout_constraintBottom_toTopOf="@+id/capture_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/capture_button"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_camera_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@null" />
+
+    <com.meta.metacomponents.views.CircleBackground
+        android:id="@+id/info_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_finder"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.meta.metacomponents.textview.MetaTextView
+            android:id="@+id/text_info_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="i"
+            android:textColor="@color/Blanco"
+            app:fontName="1"
+            android:gravity="center"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        </com.meta.metacomponents.views.CircleBackground>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

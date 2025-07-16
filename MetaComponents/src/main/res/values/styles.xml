@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/InputHintStyle</item>
+        <item name="errorEnabled">true</item>
+        <item name="boxStrokeColor">@color/Queretaro</item>
+        <item name="errorTextAppearance">@style/ErrorHintStyle</item>
+        <item name="hintTextColor">@color/Queretaro</item>
+    </style>
+
+    <style name="InputHintStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">roboto_regular</item>
+    </style>
+
+    <style name="ErrorHintStyle">
+        <item name="android:textColor">@color/Irapuato</item>
+        <item name="android:textSize">11sp</item>
+        <item name="fontFamily">roboto_bold</item>
+    </style>
+
+    <style name="HintTextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+    <style name="toolBarStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

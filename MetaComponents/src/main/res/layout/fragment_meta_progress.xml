@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meta.metacomponents.views.MetaConstrainsWhiteView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.meta.metacomponents.views.MetaConstrainsWhiteView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/background_stroke">
+
+                <include
+                    android:id="@+id/containerDataSimple"
+                    layout="@layout/no_data_simple_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.meta.metacomponents.textview.ExtraLargeTextView
+                android:id="@+id/title_progress_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/text_loading"
+                android:textColor="@color/Celaya"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containerView" />
+
+            <com.meta.metacomponents.views.MetaProgressIndeterminate
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:max="100"
+                android:indeterminate="true"
+                android:indeterminateOnly="false"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_progress_textView" />
+
+        </com.meta.metacomponents.views.MetaConstrainsWhiteView>
+    </ScrollView>
+
+</com.meta.metacomponents.views.MetaConstrainsWhiteView>

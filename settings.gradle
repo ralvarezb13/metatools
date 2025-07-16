@@ -1,0 +1,5 @@
+rootProject.name = "MetaTools"
+include ':app'
+include ':MetaTools'
+include ':MetaComponents'
+include ':cropper'

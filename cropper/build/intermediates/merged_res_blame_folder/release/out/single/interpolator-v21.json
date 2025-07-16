@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.theartofdev.edmodo.cropper-merged_res-31:/interpolator-v21/mtrl_linear_out_slow_in.xml",
+        "source": "com.theartofdev.edmodo.cropper-material-1.4.0-12:/interpolator-v21/mtrl_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "com.theartofdev.edmodo.cropper-merged_res-31:/interpolator-v21/mtrl_fast_out_linear_in.xml",
+        "source": "com.theartofdev.edmodo.cropper-material-1.4.0-12:/interpolator-v21/mtrl_fast_out_linear_in.xml"
+    },
+    {
+        "merged": "com.theartofdev.edmodo.cropper-merged_res-31:/interpolator-v21/mtrl_fast_out_slow_in.xml",
+        "source": "com.theartofdev.edmodo.cropper-material-1.4.0-12:/interpolator-v21/mtrl_fast_out_slow_in.xml"
+    }
+]
